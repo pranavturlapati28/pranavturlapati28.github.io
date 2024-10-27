@@ -1,38 +1,41 @@
+/* src/App.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Stack children vertically */
+  min-height: 100vh; /* Make the app take up at least the full viewport height */
 }
 
-.App-link {
-  color: #61dafb;
+main {
+  flex: 1; /* Allows the main content area to grow and push the footer down */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  background-color: #000000; /* Change this to your preferred header color */
+  color: rgb(0, 0, 0); /* Header text color */
+  padding: 1rem; /* Padding for the header */
+  text-align: center; /* Center the header text */
+}
+
+nav ul {
+  list-style-type: none; /* Remove bullet points from list */
+  padding: 0; /* Remove padding */
+}
+
+nav ul li {
+  display: inline; /* Display list items inline */
+  margin: 0 1rem; /* Add margin between list items */
+}
+
+footer {
+  background-color: #94b064; /* Footer background color */
+  color: white; /* Footer text color */
+  text-align: center; /* Center the footer text */
+  padding: 1rem; /* Padding for the footer */
+  margin-top: auto; /* Pushes footer to the bottom */
 }

@@ -1,0 +1,109 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #e6f0ff; /* Light blue background for the entire page */
+    color: white;
+}
+
+.hero-section {
+    background-color: #00274d; /* Darker blue for header section */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    width: 100%;
+}
+
+.hero-title {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.profile-pic {
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.introduction,
+.education,
+.experience,
+.projects,
+.skills {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #00509e; /* Medium blue background */
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.introduction p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #cce7ff;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1.8em;
+    color: #e6f0ff; /* Lighter blue for section titles */
+}
+
+h2 svg {
+    margin-right: 10px;
+}
+
+.timeline,
+.project {
+    margin-top: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item,
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #004080; /* Slightly darker blue */
+    border-left: 4px solid #66a3ff; /* Accent color */
+    border-radius: 8px;
+    color: #e6f0ff;
+}
+
+.timeline-item h3,
+.project h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.timeline-item h4 {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #cce7ff;
+}
+
+.timeline-item p,
+.timeline-item ul,
+.project p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.skills p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
